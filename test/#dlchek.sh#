@@ -1,0 +1,7 @@
+#!/bin/bash
+
+check=`echo $1`
+
+x=`echo $check | grep -E '^[A-Z]{3}$|^[0-9]{4}$|^[ABCD]$^[A-Z]{3}$|^[0-9]{4$|^[ABCD]$'`
+
+echo $x

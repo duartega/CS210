@@ -1,0 +1,3 @@
+grep -E is used extended regex feature
+     -o to print matches on different lines
+     -i ignores the case of the letter

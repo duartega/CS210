@@ -1,0 +1,19 @@
+we need to know the difference between absolute and relative path.
+   If there is a file that has a / is an absolute path because it points to the file
+   no matter what the pwd is.
+
+   If there is no slash or "foo or ../foo" then it is a relative path because it is
+   relative to the pwd we are in.
+
+   Know the difference between cd ./foo and cd foo
+
+Go over the feed back on the labs.
+   mkdir -p
+   cp -i -n
+
+
+Lab03 - feedback - not happy with results
+
+      Expect to know the chmod numbers.
+      symbolic vs outal - column 2
+      attributes/notation/chmod the notation is octal

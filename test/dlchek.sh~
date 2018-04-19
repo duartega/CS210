@@ -1,0 +1,5 @@
+#!/bin/bash
+
+x=`echo $1 | grep -E '^[A-Z]{3}(-)[0-9]{4}(-)[ABCD]$'`
+
+echo $x

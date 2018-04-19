@@ -1,0 +1,5 @@
+#!/bin/bash
+
+Get_joke=`curl -s http://api.icndb.com/jokes/$1?exlude=%5Bexplicit%5D`
+get_joke_only=`echo $get_joke | cut -d '"' -f 12`
+echo $get_joke_only

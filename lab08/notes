@@ -1,0 +1,2 @@
+grep -E is used extended regex feature
+     -O to print matches on different lines

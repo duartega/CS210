@@ -1,0 +1,383 @@
+Last login: Tue Apr 25 17:04:00 on ttys000
+stv1-161-36:~ student$ ssh gduarte@blue.cs.sonoma.edu
+gduarte@blue.cs.sonoma.edu's password: 
+Last login: Thu Apr 27 15:13:51 2017 from 70.213.10.139
+[gduarte@blue ~]$ cd sonomastate/cs210s17/lab10/
+[gduarte@blue lab10]$ l
+bash: l: command not found...
+s[gduarte@blue lab10]$ sls
+bash: sls: command not found...
+[gduarte@blue lab10]$ ls
+always-wrong.sh  conditions.sh  example1.sh~  myscript.sh      var
+compwith100.sh   elif.sh        gabe.txt      myscript.sh~
+compwith100.sh~  envscript.sh   gitinit.sh    octalscript.sh
+conditions2.sh   example1.sh    gitinit.sh~   octalscript.sh~
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh 5
+grep: [a-z]+: No such file or directory
+The provided number is less than 100
+[gduarte@blue lab10]$ ./compwith100.sh 5a
+grep: [a-z]+: No such file or directory
+./compwith100.sh: line 24: [[: 5a: value too great for base (error token is "5a")
+./compwith100.sh: line 28: [[: 5a: value too great for base (error token is "5a")
+./compwith100.sh: line 32: [[: 5a: value too great for base (error token is "5a")
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh 5a
+grep: [a-z]+$: No such file or directory
+./compwith100.sh: line 24: [[: 5a: value too great for base (error token is "5a")
+./compwith100.sh: line 28: [[: 5a: value too great for base (error token is "5a")
+./compwith100.sh: line 32: [[: 5a: value too great for base (error token is "5a")
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh 5a
+5a
+[gduarte@blue lab10]$ ./compwith100.sh 5
+The provided number is less than 100
+[gduarte@blue lab10]$ ./compwith100.sh a
+a
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh a
+./compwith100.sh: line 4: a: command not found
+./compwith100.sh: line 24: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+./compwith100.sh: line 28: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+./compwith100.sh: line 32: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+[gduarte@blue lab10]$ ./compwith100.sh 5
+The provided number is less than 100
+[gduarte@blue lab10]$ ./compwith100.sh 5a
+./compwith100.sh: line 4: 5a: command not found
+./compwith100.sh: line 24: [[: 5a: value too great for base (error token is "5a")
+./compwith100.sh: line 28: [[: 5a: value too great for base (error token is "5a")
+./compwith100.sh: line 32: [[: 5a: value too great for base (error token is "5a")
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh 5
+The provided number is less than 100
+[gduarte@blue lab10]$ ./compwith100.sh a
+./compwith100.sh: line 4: a: command not found
+./compwith100.sh: line 18: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+./compwith100.sh: line 22: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+./compwith100.sh: line 26: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+[gduarte@blue lab10]$ ./compwith100.sh 5a
+./compwith100.sh: line 4: 5a: command not found
+./compwith100.sh: line 18: [[: 5a: value too great for base (error token is "5a")
+./compwith100.sh: line 22: [[: 5a: value too great for base (error token is "5a")
+./compwith100.sh: line 26: [[: 5a: value too great for base (error token is "5a")
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh 5a
+./compwith100.sh: line 4: 5a: command not found
+./compwith100.sh: line 18: syntax error in conditional expression
+./compwith100.sh: line 19: syntax error near `then'
+./compwith100.sh: line 19: `then'
+[gduarte@blue lab10]$ ./compwith100.sh 5
+./compwith100.sh: line 18: syntax error in conditional expression
+./compwith100.sh: line 19: syntax error near `then'
+./compwith100.sh: line 19: `then'
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh a
+grep: ==: No such file or directory
+grep: True: No such file or directory
+./compwith100.sh: line 18: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+			     ./compwith100.sh: line 22: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+							  ./compwith100.sh: line 26: [[: [:alpha:]: syntax error: operand expected (error token is "[:alpha:]")
+										       [gduarte@blue lab10]$ emacs compwith100.sh
+										       [gduarte@blue lab10]$ ./compwith100.sh a
+										       ./compwith100.sh: line 4: unexpected EOF while looking for matching `)'
+./compwith100.sh: line 32: unexpected token `?' in conditional command
+./compwith100.sh: line 32: syntax error: unexpected end of file
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh a
+./compwith100.sh: line 4: unexpected EOF while looking for matching `)'
+										       ./compwith100.sh: line 32: unexpected token `?' in conditional command
+./compwith100.sh: line 32: syntax error: unexpected end of file
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ ./compwith100.sh a
+./compwith100.sh: line 4: conditional binary operator expected
+./compwith100.sh: line 4: syntax error near `$1'
+./compwith100.sh: line 4: `if [[ echo $1 | grep -E '[a-z]+$' ]]'
+										       [gduarte@blue lab10]$ emacs compwith100.sh
+										       [gduarte@blue lab10]$ ./compwith100.sh a
+										       ./compwith100.sh: line 4: conditional binary operator expected
+										       ./compwith100.sh: line 4: expected `)'
+./compwith100.sh: line 4: syntax error near `$1'
+./compwith100.sh: line 4: `if [[ (echo $1 | grep -E '[a-z]+$') ]]'
+										       [gduarte@blue lab10]$ emacs compwith100.sh
+										       [gduarte@blue lab10]$ ./compwith100.sh a
+										       [gduarte@blue lab10]$ echo $?
+										       52
+										       [gduarte@blue lab10]$ ./compwith100.sh 5a
+										       [gduarte@blue lab10]$ ./compwith100.sh 5
+										       The provided number is less than 100
+										       [gduarte@blue lab10]$ ./compwith100.sh 500
+										       The provided number is greater than 100
+										       [gduarte@blue lab10]$ ./compwith100.sh 100
+										       The provided number is equal to 100
+										       [gduarte@blue lab10]$ emacs compwith100.sh
+										       [gduarte@blue lab10]$ emacs compwith100.sh
+										       [gduarte@blue lab10]$ ./compwith100.sh
+										       [gduarte@blue lab10]$ echo $?
+										       1
+										       [gduarte@blue lab10]$ ./compwith100.sh a
+										       [gduarte@blue lab10]$ echo $?
+										       1
+										       [gduarte@blue lab10]$ ./compwith100.sh 5e4
+										       ./compwith100.sh: line 18: [[: 5e4: value too great for base (error token is "5e4")
+														    ./compwith100.sh: line 22: [[: 5e4: value too great for base (error token is "5e4")
+																		 ./compwith100.sh: line 26: [[: 5e4: value too great for base (error token is "5e4")
+																					      [gduarte@blue lab10]$ ./compwith100.sh 5e
+																					      [gduarte@blue lab10]$ emacs compwith100.sh
+																					      [gduarte@blue lab10]$ ./compwith100.sh 5e
+																					      [gduarte@blue lab10]$ echo $?
+																					      1
+																					      [gduarte@blue lab10]$ ./compwith100.sh 5e4
+																					      [gduarte@blue lab10]$ echo $?
+																					      1
+																					      [gduarte@blue lab10]$ ./compwith100.sh 5
+																					      The provided number is less than 100
+																					      [gduarte@blue lab10]$ ls
+																					      always-wrong.sh  conditions.sh  example1.sh~  myscript.sh      var
+																					      compwith100.sh   elif.sh        gabe.txt      myscript.sh~
+																					      compwith100.sh~  envscript.sh   gitinit.sh    octalscript.sh
+																					      conditions2.sh   example1.sh    gitinit.sh~   octalscript.sh~
+																					      [gduarte@blue lab10]$ emacs gitinit.sh
+																					      [gduarte@blue lab10]$ ./gitinit.sh
+																					      ./gitinit.sh: line 9: conditional binary operator expected
+																					      ./gitinit.sh: line 9: expected `)'
+./gitinit.sh: line 9: syntax error near `$1'
+./gitinit.sh: line 9: `if [[ (echo $1 | grep -E '[a-z]+$ ]]'
+[gduarte@blue lab10]$ emacs compwith100.sh
+[gduarte@blue lab10]$ emacs gitinit.sh
+[gduarte@blue lab10]$ ./gitinit.sh 
+user.email=duartega@sonoma.edu
+user.name=gabriel
+push.default=simple
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/5
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+Reinitialized existing Git repository in /home/student/gduarte/sonomastate/cs210s17/lab10/.git/
+fatal: remote origin already exists.
+error: switch `m' requires a value
+																		 usage: git commit [<options>] [--] <pathspec>...
+
+																		 -q, --quiet           suppress summary after successful commit
+																		 -v, --verbose         show diff in commit message template
+
+																		 Commit message options
+																		 -F, --file <file>     read message from file
+																		 --author <author>     override author for commit
+																		 --date <date>         override date for commit
+																		 -m, --message <message>
+																		 commit message
+																		 -c, --reedit-message <commit>
+																		 reuse and edit message from specified commit
+																		 -C, --reuse-message <commit>
+																		 reuse message from specified commit
+																		 --fixup <commit>      use autosquash formatted message to fixup specified commit
+																		 --squash <commit>     use autosquash formatted message to squash specified commit
+																		 --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+																		 -s, --signoff         add Signed-off-by:
+																		 -t, --template <file>
+																		 use specified template file
+																		 -e, --edit            force edit of commit
+																		 --cleanup <default>   how to strip spaces and #comments from message
+																		 --status              include status in commit message template
+																		 -S, --gpg-sign[=<key-id>]
+																		 GPG sign commit
+
+																		 Commit contents options
+																		 -a, --all             commit all changed files
+																		 -i, --include         add specified files to index for commit
+																		 --interactive         interactively add files
+																		 -p, --patch           interactively add changes
+																		 -o, --only            commit only specified files
+																		 -n, --no-verify       bypass pre-commit hook
+																		 --dry-run             show what would be committed
+																		 --short               show status concisely
+																		 --branch              show branch information
+																		 --porcelain           machine-readable output
+																		 --long                show status in long format (default)
+																		 -z, --null            terminate entries with NUL
+																		 --amend               amend previous commit
+																		 --no-post-rewrite     bypass post-rewrite hook
+																		 -u, --untracked-files[=<mode>]
+																		 show untracked files, optional modes: all, normal, no. (Default: all)
+
+																		 error: src refspec master does not match any.
+																		 error: failed to push some refs to 'https://github.com/5'
+																		 [gduarte@blue lab10]$ ./gitinit.sh a
+																		 Invalid repository name
+																		 [gduarte@blue lab10]$ ./gitinit.sh 5
+																		 user.email=duartega@sonoma.edu
+																		 user.name=gabriel
+																		 push.default=simple
+																		 core.repositoryformatversion=0
+																		 core.filemode=true
+																		 core.bare=false
+																		 core.logallrefupdates=true
+																		 remote.origin.url=https://github.com/5
+																		 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+																		 Reinitialized existing Git repository in /home/student/gduarte/sonomastate/cs210s17/lab10/.git/
+																		 fatal: remote origin already exists.
+																		 error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/5'
+[gduarte@blue lab10]$ emacs gitinit.sh
+[gduarte@blue lab10]$ ./gitinit.sh  
+user.email=duartega@sonoma.edu
+user.name=gabriel
+push.default=simple
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/5
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+Reinitialized existing Git repository in /home/student/gduarte/sonomastate/cs210s17/lab10/.git/
+fatal: remote origin already exists.
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/5'
+[gduarte@blue lab10]$ emacs gitinit.sh
+
+File Edit Options Buffers Tools Sh-Script Help                                            
+#!/bin/bash                                                                               
+
+if [[ '$1' == ' ' ]]
+then
+    'Please provide a repository name'
+    exit 128
+fi
+
+if [[ $(echo $1 | grep -E '[a-z]+$') ]]
+then
+    echo 'Invalid repository name'
+    exit 129
+fi
+
+if [[ '$1' == [[:alpha:]] ]]
+then
+    mkdir $1
+fi
+
+git config --list
+
+if [[ user.name == ' ' ]]
+then
+    echo 'Please configure the user.name git global variable'
+    exit 130
+fi
+
+if [[ user.email == ' ' ]]
+then
+    echo 'Please configure the user.email git global variable'
+    exit 131
+fi
+
+git init
+git remote add origin https://github.com/$1
+git add .
+git commit -m $2
+git push --set-upstream origin master
+
+
+
+
+
+
+
+
+
+-UU-:----F1  gitinit.sh     All L1    Git@master  (Shell-script[bash]) -------------------
+Indentation setup for shell type bash

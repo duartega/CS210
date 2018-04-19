@@ -1,0 +1,8 @@
+it is a text editor that allows us to write scripts that does stuff to us.
+a script does not need to be compiled. it is human readable. The interpreter
+will translate the human code into binary. Essentially you can call the
+script and it will run right away. A shell script can be made to automatically
+do something such as backups for the home file.
+
+   The shebang #!/bin/bash/python2.7 will tell the copmuter to use that certain
+   interpreter. 

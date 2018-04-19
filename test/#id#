@@ -1,0 +1,9 @@
+case q in
+    
+#!/bin/bash
+
+
+id=`cat /etc/passwd | awk -F: '{print $3}' | sort -g | tail -n 1`
+name=`cat /etc/passwd | grep -E $id | cut -d ':' -f 1`
+
+echo "The user with the highest id is $name"

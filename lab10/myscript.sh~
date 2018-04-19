@@ -1,0 +1,3 @@
+#!/bin/bash
+MYVAR=baz
+    echo "The value of MYVAR is $MYVAR"

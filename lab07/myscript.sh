@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export apache_id=`cat /etc/passwd | grep $1 | awk -F: '{print $3}'`
+export highest_id=`cat /etc/passwd | awk -F: 'END{print $3}' | sort -n`
+echo "The id of user $1 is $((highest_id - apache_id)) less than the highest id"
